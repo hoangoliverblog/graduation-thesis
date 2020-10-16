@@ -10,7 +10,7 @@
 }
 .wapper{
     width: 100%;
-    margin: 0 0 1rem 0;
+    margin: 0 0 0 0;
 }
 .brand{
     width: 100%;
@@ -51,6 +51,7 @@
     font-size: 1.3rem;
     color: rgb(197, 197, 197);
     margin-left: -2rem;
+    cursor: pointer;
 }
 /* ----------end header left------------- */
 .directory{
@@ -112,6 +113,7 @@
     top: 0;
     font-family: opensan;
     max-height: 50px;
+    z-index: 10000;
 }
 .menu{
     width: 100%;
@@ -209,67 +211,169 @@
 /* =============end hiden_icon============= */
 
 /* ================= banner =============== */
-.wapper_banner{
-    width: 100%;
-}
 .banner{
     width: 100%;
-    max-height: 350px;
     position: relative;
 }
-.banner_img{
+
+.owl_carousel{
     width: 100%;
+    height: 350px;
 }
-.banner_img img{
+.slide_img{
     width: 100%;
-    max-height: 350px;
-    z-index: 1;
+    height:350px;
 }
-.next_banner_right{
+.slide_img img{
+    width: 100%;    
+    height: auto;
+}
+.owl-nav{
     position: absolute;
-    top:40%;
+    top: 80%;
+    left: 46%;
 }
-.next_banner_right span{
-    padding: 1rem 0.7rem;
-    font-size: 30px;
-    background-color: rgb(92, 92, 92);
-    opacity: 10%;
+.owl-prev:hover{
+    background-color:transparent !important;
+    text-decoration: none;
 }
-.next_banner_right span:hover{
-    background-color: rgb(206, 206, 206);
+.owl-prev:focus{
+    outline: 0;
+    box-shadow: none;
 }
-.next_banner_left{
-    position: absolute;
-    top:40%;
-    right: 0;
+.owl-prev span{
+    padding: 0 10px;
+    font-size: 40px;
+    opacity: 0.2;
 }
-.next_banner_left span{
-    padding: 1rem 0.7rem;
-    font-size: 30px;
-    background-color: rgb(92, 92, 92);
-    opacity: 10%;
+.owl-prev span:hover{
+    opacity: 0.7;
 }
-.next_banner_left span:hover{
-    background-color: rgb(206, 206, 206);
+.owl-next:focus{
+    outline: 0;
+    box-shadow: none;
 }
-.selected_banner{
-    position: absolute;
-    bottom: 0;
-    right: 48%;
+.owl-next:hover{
+    background-color:transparent !important;
+    text-decoration: none;
 }
-.selected_banner span{
-    padding: 0 0.1rem;
-    color: rgb(206, 206, 206);
-    opacity: 50%;
+.owl-next span:hover{
+    opacity: 0.7;
 }
-.selected_banner span:hover{
-    color: rgb(92, 92, 92);
-}
-.selected_active{
-    color: rgb(92, 92, 92) !important;
+.owl-next span{
+    padding: 0 10px;
+    font-size: 40px;
+    opacity: 0.2;
 }
 /* ================ end banner =============*/
 
+
+/* ================ Product =============*/
+.col-md-3{
+    -ms-flex: 0 0 19% !important;
+    flex: 0 0 19% !important;
+    max-width: 19% !important;
+}
+.wapper_product{
+    width: 100%;
+}
+.sale_product{
+    width: 100%;
+    margin: 2px auto 0;
+    text-align: center;
+    padding: 8px 10px;
+    background-image: linear-gradient(#61f59d, #18bb4a, #0c9a0c);
+    /* font-family: opensan; */
+}
+.sale_product span{
+    font-size: 30px;
+    color: black;
+    font-style:bold;
+}
+.sale_product span i{
+    color: rgb(32, 165, 32);
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+.title_product{
+    width: 80%;
+    margin: 1.3rem auto;
+    text-align: center;
+}
+.title_product h3{
+    font-size: 1.8rem;
+}
+.product_body{
+    width: 100%;
+    margin: 0.5rem 0.3rem;
+    border: 1px solid rgb(67, 201, 67);
+    overflow: hidden;
+}
+.product_body:hover{
+    box-shadow: 6px 4px 4px #aaaaaa;
+    transition: 1s;
+}
+.product_img{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.product_img img{
+    width: 100%;
+    height: auto;
+}
+.product_img img:hover{
+    transform: scale(1.3);
+    transition: 2s;
+}
+.product_des{
+    padding: 0.6rem 0 0 0.6rem;
+    font-size: 14px;
+    color:#212121;
+}
+.product_des p:hover{
+    color: rgb(67, 201, 67);
+    transition: 1.5s;
+}
+.product_price{
+    text-align: center;
+}
+.product_price label{ 
+    color :  rgb(67, 201, 67);
+}
+.product_price label:hover{ 
+    color : pink;
+}
+.product_price label del{
+  color : pink ;
+  padding-right: 5px;
+  display: inline-block;
+} 
+.product_price label del:hover{
+    color :  rgb(67, 201, 67);
+    transition: 1.5s;
+  } 
+.product_btn{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding: 8px 0;
+}
+.product_btn button{
+    background-image: linear-gradient(#61f59d, #18bb4a, #0c9a0c);
+    padding: 5px 13px;
+}
+.product_btn button:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.21rem rgba(76, 201, 67, 0.25);
+}
+.product_btn button:hover{
+    background-image: linear-gradient(#159247, #186b31, #00bd00);
+    padding: 5px 13px;
+    color: pink;
+}
+/* ================ end product =============*/
 @media only screen and (max-width:990px){
     /* +++++++++++header++++++++++++ */
     .brand_img{
@@ -295,8 +399,34 @@
     .logo_product_name span{
         font-size: 13px ;
     }
-}
+    .owl-nav{
+        position: absolute;
+        top: 62%;
+        left: 50%;
+    }
+    .sale_product span{
+        font-size: 26px;
+    }
+    .col-md-3{
+        -ms-flex: 0 0 23% !important;
+        flex: 0 0 23% !important;
+        max-width: 23% !important;
+    }
 
+}
+/* *****************max-width 800px********************* */
+@media only screen and (max-width:800px){
+    .owl-nav{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    .col-md-3{
+        -ms-flex: 0 0 31% !important;
+        flex: 0 0 31% !important;
+        max-width: 31% !important;
+    }
+}
 /* *****************max-width 768px********************* */
 @media only screen and (max-width:768px){
     .menu_top{
@@ -317,9 +447,30 @@
         overflow: scroll;
     }
     .selected_banner{
-        right: 42%;
+        right: 45%;
     }
+    .next{
+        margin-top: -18rem;
+    }
+    .owl-nav{
+        position: absolute;
+        top: 35%;
+        left: 44%;
+    }
+    .col-md-3{
+        -ms-flex: 0 0 31% !important;
+        flex: 0 0 31% !important;
+        max-width: 31% !important;
+    }
+}
 
+/* *****************max-width 660px********************* */
+@media only screen and (max-width:660px){
+    .col-md-3{
+        -ms-flex: 0 0 48% !important;
+        flex: 0 0 48% !important;
+        max-width: 48% !important;
+    }
 }
 /* *****************max-width 576px********************* */
 @media only screen and (max-width:576px){
@@ -334,6 +485,16 @@
     .logo_product_img img{
         width: 60%;
         height: auto;
+    }
+    .owl-nav{
+        position: absolute;
+        top: 24%;
+        left: 40%;
+    }
+    .col-md-3{
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
     }
 }
 /* *****************max-width 480px********************* */
@@ -352,12 +513,28 @@
         font-weight: bold;
         padding-bottom: 0.4rem;
     }
-
-}
+    .next{
+        margin-top: -19rem;
+    }
+    .owl-nav{
+        position: absolute;
+        top: 19%;
+        left: 45%;
+    }
 
 /* *****************max-width 420px********************* */
 @media only screen and (max-width:420px){
     .brand_img{
         margin-left: 10%;
     }
+    .next{
+        margin-top: -21rem;
+    }
+    .owl-nav{
+        position: absolute;
+        top: 14%;
+        left: 40%;
+    }
 }
+
+/* *************************** Model *********************************** */

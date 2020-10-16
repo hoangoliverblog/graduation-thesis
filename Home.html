@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d1bc342d1d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/style/owl.theme.default.css">
     <link rel="stylesheet" href="./lib/style/Homecss.css">
     <title>Mỹ phẩm 365</title>
 </head>
@@ -32,7 +34,7 @@
                     <div class="directory">
                         <ul>
                             <li><span><i class="fas fa-user"></i></span><a href="">Đăng nhập</a></li>
-                            <li><span><i class="fas fa-users"></i></span><a href="">Đăng kí</a></li>
+                            <li><span><i class="fas fa-users"></i></span><a id="resgiter"href="">Đăng kí</a></li>
                             <li><span><i class="fas fa-dollar-sign"></i></span><a href="">Thanh toán</a></li>
                         </ul>
                     </div>
@@ -138,35 +140,174 @@
                 </div>
             </div>
         </div>
-        <!-- ++++++++++++++++ banner ++++++++++++++++++ -->
-        <div class="wapper_banner">
-            <div class="banner">
-                <div class="banner_img">
-                    <img src="./lib/img/banner.png" alt="banner">
+    </div>    
+    <!-- ++++++++++++++++ end menu ++++++++++++++++++ -->  
+       
+    <!-- ++++++++++++++++ banner ++++++++++++++++++ -->
+    <div class="banner">
+        <div class="owl-carousel owl-theme">
+            <div class="item slide_img"><img src="./lib/img/banner_green.jpg" alt=""></div>
+            <div class="item slide_img"><img src="./lib/img/banner_green.jpg" alt=""></div>
+            <div class="item slide_img"><img src="./lib/img/banner_green.jpg" alt=""></div>
+        </div>
+    </div>
+    <!-- ++++++++++++++++ end banner ++++++++++++++++++ -->
+
+    <!-- ++++++++++++++++ all product ++++++++++++++++++ -->     
+    <div class="wapper_product">
+        <div class="sale_product">
+            <span><i class="fas fa-archway"></i>Mua ngay sản phẩm chính hẵng với Shop mỹ phẩm 365</span>
+        </div>
+        <div class="title_product">
+            <h3>Sản phẩm mới</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-xs-6 product_body">
+                    <div class="product_img">
+                        <img src="./lib/img/san-pham-1.jpg" alt="">
+                    </div>
+                    <div class="product_des">
+                        <p>Kem Chống Nắng Enesti UV Cut Sun Block SPF 50+ PA+++ 40ml (Màu Xanh Dành Cho Da Dầu)</p>
+                    </div>
+                    <div class="product_price">
+                        <label><del>310,000đ</del></label>
+                        <label>225,000đ</label>
+                    </div>
+                    <div class="product_btn">
+                        <button>Mua ngay</button>
+                    </div>
                 </div>
-                <div class="next_banner_right">
-                    <span><i class="fas fa-angle-double-left"></i></span>
+                <div class="col-md-3 col-sm-12 col-xs-6 product_body">
+                    <div class="product_img">
+                        <img src="./lib/img/san-pham-1.jpg" alt="">
+                    </div>
+                    <div class="product_des">
+                        <p>Kem Chống Nắng Enesti UV Cut Sun Block SPF 50+ PA+++ 40ml (Màu Xanh Dành Cho Da Dầu)</p>
+                    </div>
+                    <div class="product_price">
+                        <label><del>310,000đ</del></label>
+                        <label>225,000đ</label>
+                    </div>
+                    <div class="product_btn">
+                        <button>Mua ngay</button>
+                    </div>
                 </div>
-                <div class="next_banner_left">
-                    <span><i class="fas fa-angle-double-right"></i></span>                    
+                <div class="col-md-3 col-sm-12 col-xs-6 product_body">
+                    <div class="product_img">
+                        <img src="./lib/img/san-pham-1.jpg" alt="">
+                    </div>
+                    <div class="product_des">
+                        <p>Kem Chống Nắng Enesti UV Cut Sun Block SPF 50+ PA+++ 40ml (Màu Xanh Dành Cho Da Dầu)</p>
+                    </div>
+                    <div class="product_price">
+                        <label><del>310,000đ</del></label>
+                        <label>225,000đ</label>
+                    </div>
+                    <div class="product_btn">
+                        <button>Mua ngay</button>
+                    </div>
                 </div>
-                <div class="selected_banner">
-                    <span class="selected_active"><i class="fas fa-circle"></i></span>
-                    <span><i class="fas fa-circle"></i></span>
-                    <span><i class="fas fa-circle"></i></span>
-                    <span><i class="fas fa-circle"></i></span>
-                    <span><i class="fas fa-circle"></i></span>
+                <div class="col-md-3 col-sm-12 col-xs-6 product_body">
+                    <div class="product_img">
+                        <img src="./lib/img/san-pham-1.jpg" alt="">
+                    </div>
+                    <div class="product_des">
+                        <p>Kem Chống Nắng Enesti UV Cut Sun Block SPF 50+ PA+++ 40ml (Màu Xanh Dành Cho Da Dầu)</p>
+                    </div>
+                    <div class="product_price">
+                        <label><del>310,000đ</del></label>
+                        <label>225,000đ</label>
+                    </div>
+                    <div class="product_btn">
+                        <button>Mua ngay</button>
+                    </div>
                 </div>
+                <div class="col-md-3 col-sm-12 col-xs-6 product_body">
+                    <div class="product_img">
+                        <img src="./lib/img/san-pham-1.jpg" alt="">
+                    </div>
+                    <div class="product_des">
+                        <p>Kem Chống Nắng Enesti UV Cut Sun Block SPF 50+ PA+++ 40ml (Màu Xanh Dành Cho Da Dầu)</p>
+                    </div>
+                    <div class="product_price">
+                        <label><del>310,000đ</del></label>
+                        <label>225,000đ</label>
+                    </div>
+                    <div class="product_btn">
+                        <button>Mua ngay</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-6 product_body">
+                    <div class="product_img">
+                        <img src="./lib/img/san-pham-1.jpg" alt="">
+                    </div>
+                    <div class="product_des">
+                        <p>Kem Chống Nắng Enesti UV Cut Sun Block SPF 50+ PA+++ 40ml (Màu Xanh Dành Cho Da Dầu)</p>
+                    </div>
+                    <div class="product_price">
+                        <label><del>310,000đ</del></label>
+                        <label>225,000đ</label>
+                    </div>
+                    <div class="product_btn">
+                        <button>Mua ngay</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-6 product_body">
+                    <div class="product_img">
+                        <img src="./lib/img/san-pham-1.jpg" alt="">
+                    </div>
+                    <div class="product_des">
+                        <p>Kem Chống Nắng Enesti UV Cut Sun Block SPF 50+ PA+++ 40ml (Màu Xanh Dành Cho Da Dầu)</p>
+                    </div>
+                    <div class="product_price">
+                        <label><del>310,000đ</del></label>
+                        <label>225,000đ</label>
+                    </div>
+                    <div class="product_btn">
+                        <button>Mua ngay</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-6 product_body">
+                    <div class="product_img">
+                        <img src="./lib/img/san-pham-1.jpg" alt="">
+                    </div>
+                    <div class="product_des">
+                        <p>Kem Chống Nắng Enesti UV Cut Sun Block SPF 50+ PA+++ 40ml (Màu Xanh Dành Cho Da Dầu)</p>
+                    </div>
+                    <div class="product_price">
+                        <label><del>310,000đ</del></label>
+                        <label>225,000đ</label>
+                    </div>
+                    <div class="product_btn">
+                        <button>Mua ngay</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-6 product_body">
+                    <div class="product_img">
+                        <img src="./lib/img/san-pham-1.jpg" alt="">
+                    </div>
+                    <div class="product_des">
+                        <p>Kem Chống Nắng Enesti UV Cut Sun Block SPF 50+ PA+++ 40ml (Màu Xanh Dành Cho Da Dầu)</p>
+                    </div>
+                    <div class="product_price">
+                        <label><del>310,000đ</del></label>
+                        <label>225,000đ</label>
+                    </div>
+                    <div class="product_btn">
+                        <button>Mua ngay</button>
+                    </div>
+                </div>
+                
             </div>
         </div>
-        <!-- ++++++++++++++++ end banner ++++++++++++++++++ -->
-    </div>    
-    <!-- ++++++++++++++++ end menu ++++++++++++++++++ -->
-
- 
+    </div>
+    <!-- ++++++++++++++++ end product ++++++++++++++++++ -->     
 <script src="./lib/bootstrap/js/jquery-3.4.1.min.js"></script>
 <script src="./lib/bootstrap/js/popper.min.js"></script>
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/style/owl.carousel.min.js"></script>
 <script src="./lib/style/Homejs.js"></script>
+</script>
 </body>
 </html>
